@@ -1,12 +1,11 @@
--XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC
+**Introduction**
 
-1. Introduction
 Epsilon Garbage Collector (JEP 318): JDK 11 introduced a new garbage collector called Epsilon, which is a no-op garbage collector. 
 It is designed for scenarios where memory management is handled externally or for performance testing purposes. 
 Epsilon eliminates the overhead of garbage collection, resulting in faster execution for short-lived applications or applications with specific memory requirements.
 
 
-3. Explanation
+**Explanation**
 
 In computer science, "No-Op" stands for "No Operation" or "No Operation Performed."
 It refers to an operation or function that does nothing or has no effect when executed.
@@ -25,7 +24,7 @@ However, in real-world scenarios, a No-Op Garbage Collector would defeat the pur
 No-Op Garbage Collector is not typically used in production environments.
 
 
-2. Demo
+**Demo**
 
 This code package (ge.computerscince.Main) creates one-megabyte-arrays in a loop.  it means we allocate 10 gigabytes of memory, which is probably higher than the available maximum heap size.
 
